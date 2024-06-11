@@ -1,4 +1,7 @@
-# Solução do Desafio Backend do PicPay
+| <h3> Solução do Desafio Backend do PicPay </h3> | <img align="right" alt="Felipe-java" height="60" width="60" src="https://brunograna.notion.site/image/https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1605198751085330434%2FUA6nxH1G_400x400.jpg?table=block&id=cf14e138-affe-4c34-b2d1-403d1f2a5443&spaceId=2fe2240a-665d-4d59-85b5-2d735afdb7d3&width=250&userId=&cache=v2"> |
+|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
 
 ## Tecnologias Utilizadas
 

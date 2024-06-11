@@ -56,7 +56,7 @@ public class WalletType {
             return description;
         }
 
-        public WalletType getWalletType() {
+        public WalletType get() {
             return new WalletType(id, description);
         }
     }

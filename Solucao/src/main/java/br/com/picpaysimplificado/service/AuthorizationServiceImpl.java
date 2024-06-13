@@ -1,6 +1,7 @@
 package br.com.picpaysimplificado.service;
 
 import br.com.picpaysimplificado.client.AuthorizationClient;
+import br.com.picpaysimplificado.controller.dto.TransferDto;
 import br.com.picpaysimplificado.entity.Transfer;
 import br.com.picpaysimplificado.exception.PicPayException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ public class AuthorizationServiceImpl implements AuthorizationService {
     @Autowired
     AuthorizationClient authorizationClient;
 
-    public boolean isAuthorized(Transfer transfer) {
+    public boolean isAuthorized(TransferDto transfer) {
        var resp = authorizationClient.isAuthorized();
 
        if(resp.getStatusCode().isError()) {

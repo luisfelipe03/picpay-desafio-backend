@@ -32,11 +32,11 @@ public class TransferServiceImpl implements TransferService {
     @Transactional
     public Transfer transfer(TransferDto transferDto) {
 
-        var sender = walletRepository.findById(transferDto.Payer())
-            .orElseThrow(() -> new WalletNotFoundException(transferDto.Payer()));
+        var sender = walletRepository.findById(transferDto.payer())
+            .orElseThrow(() -> new WalletNotFoundException(transferDto.payer()));
 
-        var receiver = walletRepository.findById(transferDto.Payee())
-            .orElseThrow(() -> new WalletNotFoundException(transferDto.Payee()));
+        var receiver = walletRepository.findById(transferDto.payee())
+            .orElseThrow(() -> new WalletNotFoundException(transferDto.payee()));
 
         validateTranfer(transferDto, sender);
 
